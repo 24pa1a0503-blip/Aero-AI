@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aero AI — Build Web Apps with Natural Language</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <svg style="position: absolute; width: 0; height: 0;" width="0" height="0">
+    <defs>
+      <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#6366f1" />
+        <stop offset="100%" stop-color="#d946ef" />
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <svg class="logo-icon" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Aero AI
+      </a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#playground">Playground</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#" class="nav-cta" id="nav-get-started">Get Started</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Toggle navigation menu" id="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <div class="badge">✦ Introducing Public Beta v2.5</div>
+      <h1>
+        Build beautiful web apps <br>
+        <span class="gradient-text" id="typewriter"></span>
+      </h1>
+      <p class="hero-subheadline">
+        Aero is the ultimate natural-language IDE. Design components, set up logic modules, and deploy responsive structures in real-time.
+      </p>
+      <div class="cta-group">
+        <a href="#playground" class="btn btn-primary">Try Interactive Demo</a>
+        <a href="#features" class="btn btn-secondary">Explore Features</a>
+      </div>
+      <div class="trust-text">
+        <span>Instant Preview</span>
+        <span class="trust-dot"></span>
+        <span>No Credit Card Required</span>
+        <span class="trust-dot"></span>
+        <span>Vercel Integration Deploy</span>
+      </div>
+
+      <div class="playground" id="playground">
+        <div class="window-chrome">
+          <!-- Window Header Chrome -->
+          <div class="window-header">
+            <div class="window-controls">
+              <span class="window-dot red"></span>
+              <span class="window-dot yellow"></span>
+              <span class="window-dot green"></span>
+            </div>
+            <div class="window-title">aero-ai-engine.jsx</div>
+            <div class="status-indicator">
+              <span class="status-pulse"></span>
+              <span>LIVE CORE</span>
+            </div>
+          </div>
+          
+          <div class="window-body">
+            <!-- Sidebar: Select Templates -->
+            <div class="panel-templates">
+              <div class="panel-label">Templates / Prompts</div>
+              
+              <div class="prompt-card active" id="btn-chat">
+                <h4>1. AI Chat App</h4>
+                <p>Modern gradient chat ui screen</p>
+              </div>
+              
+              <div class="prompt-card" id="btn-saas">
+                <h4>2. SaaS Analytics</h4>
+                <p>Grid dashboard structure with values</p>
+              </div>
+              
+              <div class="prompt-card" id="btn-card">
+                <h4>3. Bio Card profile</h4>
+                <p>Compact dark avatar card component</p>
+              </div>
+            </div>
+
+            <div class="panel-editor" id="code-output">
+            </div>
+
+            <div class="panel-preview">
+              <div class="preview-header">
+                <span class="preview-indicator-dot"></span>
+                <span>RENDERED CANVAS</span>
+              </div>
+              <div class="sandbox-stage" id="sandbox-stage">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2>Engineered for modern speed</h2>
+        <p>Built with absolute fidelity and optimization to bypass heavy runtime frameworks.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3>Light-speed Generation</h3>
+          <p>Deploy codebases in fragments. Aero converts natural phrases into optimized React layout structures immediately.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-2 0v-6z" />
+            </svg>
+          </div>
+          <h3>Dynamic Layout Engine</h3>
+          <p>Every element renders fluidly. Responsive container adjustments work straight out-of-the-box on every device.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 009 11V9a3 3 0 00-6 0v1a3 3 0 003 3h1m11 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3>Optimized Dark-mode UI</h3>
+          <p>A beautiful tech-noir style with smooth transitions, customized glow vectors, and elegant typography configurations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-box">
+        <div class="cta-box-content">
+          <h2>Ready to build fast?</h2>
+          <p>Deploy your premium ideas on a high-performing system designed from the ground up to convert and load instantly.</p>
+          <button class="btn btn-primary" id="cta-action-btn">Start Coding Free</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-content">
+      <div class="copyright">
+        &copy; 2026 Aero AI Systems Inc. All rights reserved.
+      </div>
+      <ul class="footer-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#playground">Sandbox</a></li>
+        <li><a href="#" id="footer-privacy-btn">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="toast" id="custom-toast">
+    <svg width="20" height="20" fill="none" stroke="#27c93f" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+    <span id="toast-message">Notification placeholder text</span>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
